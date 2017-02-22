@@ -1,0 +1,4 @@
+<md-spinner *ngIf="isLoading"></md-spinner>
+<div class="row">
+  <app-client-item class="col-6" (onEdit)="goToEdit($event)" [client]="client" *ngFor="let client of clients"></app-client-item>
+</div>
